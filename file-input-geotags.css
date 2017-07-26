@@ -1,0 +1,43 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+h2 {
+	margin-top: 1.5em;
+}
+
+pre {
+	font-size: 11px;
+	word-wrap: break-word;
+	overflow-x: auto;
+}
+
+#container {
+	width: 100%;
+	max-width: 500px;
+	margin: 2em auto;
+}
+
+#input {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 500px) {
+
+	#container {
+		padding: 0 10px;
+	}
+
+}

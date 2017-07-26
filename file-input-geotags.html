@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>File input geotags</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="file-input-geotags.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1>File input geotags</h1>
+			<p>iOS file input geotags minimal test case. Before trying this out, <a href="https://forums.imore.com/guides-how-articles/271636-guide-how-enable-disable-geotagging.html">configure your Location Services</a> to enable location access for Camera and Mobile Safari.</p>
+			<ol>
+				<li>Tap the file input below</li>
+				<li>Choose "Take Photo or Video"</li>
+				<li>Take a photo, tap "Use Photo"</li>
+				<li>Observe the EXIF tags <em>don't</em> include GPS info</li>
+				<li>Take a photo with the Camera app</li>
+				<li>Tap the file input and choose the second photo</li>
+				<li>Observe the EXIF tags <em>do</em> include GPS info</li>
+			</ol>
+			<label for="input">File input</label>
+			<input type="file" id="input">
+			<h2>Exif tags</h2>
+			<pre id="exif">Select a JPEG from the file input above.</pre>
+		</div>
+		<script src="exif.js"></script>
+		<script src="file-input-geotags.js"></script>
+	</body>
+</html>
